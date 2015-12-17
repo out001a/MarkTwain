@@ -1,0 +1,20 @@
+{
+   "backend": {
+      "message": "https://app.marxi.co"
+   },
+   "backend_yinxiang": {
+      "message": "http://115.29.201.173/app"
+   },
+   "description": {
+      "message": "Powerful Markdown Editor for Evernote"
+   },
+   "extName": {
+      "message": "Marxico"
+   },
+   "index": {
+      "message": "index_en.html"
+   },
+   "lang": {
+      "message": "en"
+   }
+}
