@@ -1328,6 +1328,17 @@ $$ a^2 + b^2 = c^2 $$
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label class="col-lg-4 control-label"></label>
+                                    <div class="col-lg-7">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" name="code_line_number" > 显示代码块行号</a>
+                                            </label> 
+                                            <!-- <div class="help-block">Evernote 默认字号 14px，一般适合大段纯文字。&lt;br&gt;&lt;br&gt;如果笔记中有很多 LaTex 公式，16px 以上会更好。</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
                                     <label class="col-lg-4 control-label">LaTex 输出格式<a
 									href="#" title='PNG 通用性较好，但放大会失真。&lt;br&gt;&lt;br&gt; SVG为矢量图形，缩放不会失真，但体积较大，且 Android 4.3 以下无法显示。'>(?)</a></label>
                                     <div class="col-lg-7">
@@ -1443,7 +1454,9 @@ body {
 			</div>
 			<div class="modal-body">
 				<ul>
-				<li>Mac & Windows桌面客户端正式发布</li>	
+				<li>支持 Evernote 中修改笔记本和标签</li>
+				<li>支持 Evernote 中 TOC 和脚注跳转</li>	
+				<li>增加代码块行号功能</li>
 				<li>Bug 修复</li>
 			</div>
 			<div class="modal-footer">
@@ -1496,7 +1509,7 @@ body {
 			<div class="modal-body">
             <dl>
                 <dt>版本</dt>
-                <dd>1.5.0</dd>
+                <dd>1.6.1</dd>
                 <dt>反馈</dt>
                 <dd>
                 邮箱：hustgock@gmail.com

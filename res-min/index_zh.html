@@ -25,7 +25,7 @@
             window.CDN = "//dn-maxiang.qbox.me"
         
 
-        window.MX_VERSION = 20150826
+        window.MX_VERSION = 20151207
         </script>
 
 
@@ -36,7 +36,7 @@
         (function(){
         		var url = window.location.href
                 if (/guid/.test(location.hash)){
-                    if (/fast_redirect=1/.test(document.cookie) || localStorage.getItem('client_installed') == 1){
+                    if (/\bfast_redirect=1/.test(document.cookie) || localStorage.getItem('client_installed') == 1){
                         window.location.href = window.location.href.replace(/^\w*:/, "mxdown:");
                         return;
                     } else {
@@ -66,7 +66,7 @@
         window.ENV = {    
         	web: true,
         	ua: navigator.userAgent,
-        	version : "2014-08-24"
+        	version : "2015-12-07"
         }
         </script>
         
@@ -79,7 +79,7 @@
             
         </script>
 
-        <link href="/res-min/themes/marxico.css?1441718028138" rel="stylesheet" />
+        <link href="/res-min/themes/marxico.css?1449717601371" rel="stylesheet" />
 
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -87,7 +87,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         
-        ga('create', 'UA-43559825-2', 'maxiang.info');
+        ga('create', 'UA-43559825-2', 'maxiang.io');
         ga('send', 'pageview');
         </script>
         
@@ -1389,6 +1389,17 @@ $$ a^2 + b^2 = c^2 $$
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label class="col-lg-4 control-label"></label>
+                                    <div class="col-lg-7">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" name="code_line_number" > 显示代码块行号</a>
+                                            </label> 
+                                            <!-- <div class="help-block">Evernote 默认字号 14px，一般适合大段纯文字。&lt;br&gt;&lt;br&gt;如果笔记中有很多 LaTex 公式，16px 以上会更好。</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
                                     <label class="col-lg-4 control-label">LaTex 输出格式<a
 									href="#" title='PNG 通用性较好，但放大会失真。&lt;br&gt;&lt;br&gt; SVG为矢量图形，缩放不会失真，但体积较大，且 Android 4.3 以下无法显示。'>(?)</a></label>
                                     <div class="col-lg-7">
@@ -1504,7 +1515,9 @@ body {
 			</div>
 			<div class="modal-body">
 				<ul>
-				<li>Mac & Windows桌面客户端正式发布</li>	
+				<li>支持 Evernote 中修改笔记本和标签</li>
+				<li>支持 Evernote 中 TOC 和脚注跳转</li>	
+				<li>增加代码块行号功能</li>
 				<li>Bug 修复</li>
 			</div>
 			<div class="modal-footer">
@@ -1557,7 +1570,7 @@ body {
 			<div class="modal-body">
             <dl>
                 <dt>版本</dt>
-                <dd>1.5.0</dd>
+                <dd>1.6.1</dd>
                 <dt>反馈</dt>
                 <dd>
                 邮箱：hustgock@gmail.com
@@ -1582,10 +1595,10 @@ body {
 </div>
 
 
-    <script src="/res-min/lib.js?1441718028138"></script>
+    <script src="/res-min/lib.js?1449717601371"></script>
 
 
-    <script src="/res-min/main_zh.js?1441718028138"></script>
+    <script src="/res-min/main_zh.js?1449717601371"></script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -1593,7 +1606,7 @@ body {
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     
-    ga('create', 'UA-43559825-2', 'maxiang.info');
+    ga('create', 'UA-43559825-2', 'maxiang.io');
     ga('send', 'pageview');
     </script>
     
@@ -1650,8 +1663,8 @@ body {
     };
         </script>
     <script>
-    //if (/maxiang\.io/.test(location.href) && /guid/.test(location.hash) && !docCookies.hasItem('never_fast_redirect') && !docCookies.hasItem('fast_redirect')){
-    if (  !docCookies.hasItem('never_fast_redirect') && !docCookies.hasItem('fast_redirect')){
+    if (/maxiang\.io/.test(location.href) && /guid/.test(location.hash) && !docCookies.hasItem('never_fast_redirect') && !docCookies.hasItem('fast_redirect')){
+    //if (  !docCookies.hasItem('never_fast_redirect') && !docCookies.hasItem('fast_redirect')){
         document.querySelector("#fast-redirect-hint").style.display = "block";
     }
 function enable_fast_redirect(){
