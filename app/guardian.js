@@ -6,7 +6,7 @@ window.Guardian =  {
     CDN : "",
     backend : window.BACKEND,
     ENV : window.ENV,
-    version: 20150826,
+    version: 20151207,
 	open_web: _window_open,
     _current: chrome.app.window.current(),
     reload : function(){

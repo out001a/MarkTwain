@@ -26,7 +26,7 @@
          "title": "Guid"
       }
    },
-   "version": "1.5.3",
+   "version": "1.6.1",
    "webview": {
       "partitions": [ {
          "accessible_resources": [ "sandboxing.html", "*.js", "*.css", "*.woff", "*.otf" ],

@@ -25,7 +25,7 @@
             window.CDN = "//d31qtcb7c58z3n.cloudfront.net"
         
 
-        window.MX_VERSION = 20150826
+        window.MX_VERSION = 20151207
         </script>
 
 
@@ -36,7 +36,7 @@
         (function(){
         		var url = window.location.href
                 if (/guid/.test(location.hash)){
-                    if (/fast_redirect=1/.test(document.cookie) || localStorage.getItem('client_installed') == 1){
+                    if (/\bfast_redirect=1/.test(document.cookie) || localStorage.getItem('client_installed') == 1){
                         window.location.href = window.location.href.replace(/^\w*:/, "mxdown:");
                         return;
                     } else {
@@ -66,7 +66,7 @@
         window.ENV = {    
         	web: true,
         	ua: navigator.userAgent,
-        	version : "2014-08-24"
+        	version : "2015-12-07"
         }
         </script>
         
@@ -79,7 +79,7 @@
             
         </script>
 
-        <link href="/res-min/themes/marxico.css?1441718028138" rel="stylesheet" />
+        <link href="/res-min/themes/marxico.css?1449717601371" rel="stylesheet" />
 
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -1380,6 +1380,17 @@ $$ a^2 + b^2 = c^2 $$
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label class="col-lg-4 control-label"></label>
+                                    <div class="col-lg-7">
+                                        <div class="checkbox">
+                                            <label> <input type="checkbox" name="code_line_number" > Show line number for code block</a>
+                                            </label> 
+                                            <!-- <div class="help-block">Evernote&#39;s default font size is 14px. It looks good for large paragraphs. &lt;br&gt;&lt;br&gt;If your notes have lots of LaTex, 16px and above is better.</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
                                     <label class="col-lg-4 control-label">LaTex output<a
 									href="#" title='PNG has wider support, however may be fuzzing when scaling.&lt;br&gt;&lt;br&gt;SVG keeps its clarity when scaling, while needs larger size and is incompatible with Android 4.3 below.'>(?)</a></label>
                                     <div class="col-lg-7">
@@ -1496,7 +1507,9 @@ body {
 			<div class="modal-body">
 				
 				<ul>
-					<li>Release Mac & Windows desktop client</li>
+					<li>Enable TOC & footnotes in Evernotee</li>
+					<li>Support modifying notebook and tags in Evernote</li>
+					<li>Add code block line number</li>
 					<li>Bug fix</li>
 
 				</ul>
@@ -1548,7 +1561,7 @@ body {
 			<div class="modal-body">
             <dl>
                 <dt>Version</dt>
-                <dd>1.5.0</dd>
+                <dd>1.6.1</dd>
                 <dt>Feedback</dt>
                 <dd>
                 Email: hustgock@gmail.com
@@ -1573,10 +1586,10 @@ body {
 </div>
 
 
-    <script src="/res-min/lib.js?1441718028138"></script>
+    <script src="/res-min/lib.js?1449717601371"></script>
 
 
-    <script src="/res-min/main_en.js?1441718028138"></script>
+    <script src="/res-min/main_en.js?1449717601371"></script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
